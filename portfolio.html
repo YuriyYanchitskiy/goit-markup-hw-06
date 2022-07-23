@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
+    <link rel="stylesheet" href="./css/modern-nomalize.css" />
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body class="body">
@@ -249,19 +250,20 @@
                 </li>
             </ul>
         </div>
-        <div class="footer-sign">
-            <p class="sign-text">Подпишитесь на рассылку</p>
-            <form class="form-sign" autocomplete="off" novalidate>
-                <label class="lable-sign">
-                    <input class="input-sign" type="email" name="email" placeholder="E-mail">
-                </label>
-                <button class="button-sign" type="submit"> Подписаться
-                    <svg class="icon-send" width="24px" height="24px">
-                        <use href="./imeges/hw/icons.svg#icon-send"></use>
-                    </svg>
-                </button>
-            </form>
-        </div>
+        <!-- Підпишіться -->
+        <form class="footer-form">
+            <div>
+                <p class="title-subscribe">Подпишитесь на рассылку</p>
+                <div class="footer-form-fild">
+                    <label for="footer-subscribe" class="footer-form-lable"></label>
+                    <input id="footer-subscribe" type="email" name="email" class="footer-subscribe" placeholder="E-mail">
+                    <button type="submit" class=" button button-footer">
+                        <svg class="button-footer-icon" width="24px" height="24px">
+                            <use href="./imeges/hw/icons.svg#icon-send"></use>
+                        </svg>Подписаться</button>
+                </div>
+            </div>
+        </form>
     </div>
 </footer>
 </body>
